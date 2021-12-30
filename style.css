@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+:root{
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+    --Dark-gray: hsl(0, 0%, 59%);
+}
+body{
+    background: url('images/bg-pattern-top.svg') no-repeat -42% 53%, url('images/bg-pattern-bottom.svg') no-repeat 144% -35%,var(--Dark-cyan) ;
+    font-size: 18px;
+    font-family: "Kumbh Sans", sans-serif;
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.card-pattern img{
+    width: 100%;
+}
+.user-img img{
+    border: 2px solid white;
+    border-radius: 50%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-56%);
+}
+.name{
+    margin: -2rem auto 0 auto;
+    text-align: center;
+    font-weight: 700;
+}
+.name span{
+    color: var(--Dark-gray);
+    font-weight: 400;
+}
+.place{
+    color: var(--Dark-grayish-blue);
+    text-align: center;
+    font-weight: 400;
+    padding: 0.5rem 0rem 1.5rem 0rem;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 0.01rem solid var(--Dark-grayish-blue);
+    padding: 1.5rem 3rem ;
+    text-align: center;
+}
+li h3{
+    font-weight: 700;
+}
+li p{
+    font-size: 15px;
+    color: var(--Dark-gray);
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 97%;
+    transform: translateX(-50%);
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+@media (max-width:400px){
+    body{
+        background: url(images/bg-pattern-top.svg) no-repeat 114% 58%, url(images/bg-pattern-bottom.svg) no-repeat -18% -35%,var(--Dark-cyan);
+        font-size: 15px;
+    }
+    ul{
+        padding: 1rem 5%;
+        justify-content: space-between;
+    }
+    .attribution {
+        font-size: 11px;
+        text-align: center;
+        position: absolute;
+        left: 50%;
+        top: 95%;
+        transform: translateX(-50%);
+    }
+    .user-img img{
+        width: 40%;
+    }
+    .name {
+        font-size: 15px;
+    }
+    .place{
+        font-size: 12px;
+        padding: 0.5rem 0rem ;
+    }
+    ul h3{
+        font-size: 15px;
+    }
+    ul p{
+        font-size: 12px;
+    }
+}
